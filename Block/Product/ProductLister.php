@@ -59,7 +59,7 @@ class ProductLister extends \Magento\Catalog\Block\Product\ListProduct
         $html = '';
         $i = 0;
         foreach ($this->getLoadedProductCollection() as $product) {
-            if(isset($cached[$i])) {
+            if(!empty($cached[$i])) {
                 $html .= $cached[$i];
             } else {
                 $html .= $this->blockFactory->createBlock($this->productRenderBlock, ['product' => $product, 'mode' => $this->getMode()])->toHtml();

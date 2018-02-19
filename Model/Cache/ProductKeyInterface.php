@@ -1,5 +1,5 @@
 <?php
-namespace Zolat\FastCategoryPages\model\cache;
+namespace Zolat\FastCategoryPages\Model\Cache;
 
 interface ProductKeyInterface
 {
@@ -8,7 +8,7 @@ interface ProductKeyInterface
      *
      * @return string
      */
-    public function key($product);
+    public function key($product, $mode);
 
 
     /**
@@ -16,5 +16,5 @@ interface ProductKeyInterface
      *
      * @return string[]
      */
-    public function keyAll($productCollection);
+    public function keyAll($productCollection, $mode);
 }

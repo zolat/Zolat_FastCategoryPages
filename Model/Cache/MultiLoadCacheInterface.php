@@ -8,5 +8,5 @@ interface MultiLoadCacheInterface
      *
      * @return string[]
      */
-    public function load($keys);
+    public function multiLoad($keys);
 }

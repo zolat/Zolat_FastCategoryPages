@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="category.products">
+            <block class="Zolat\FastCategoryPages\Block\Product\ListProduct" name="category.products.list" as="product_list" template="Magento_Catalog::product/list.phtml">
+                <block class="Zolat\FastCategoryPages\Block\Product\ProductList\ProductListItem" name="category.products.list.item">
+                </block>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

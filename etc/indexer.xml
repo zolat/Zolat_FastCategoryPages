@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="catalog_product_htmllistview" view_id="catalog_product_htmllistview" class="Zolat\FastCategoryPages\Model\Indexer\ProductListHtml">
+        <title translate="true">Product List View Html</title>
+        <description translate="true">Html of single products to display in lists</description>
+    </indexer>
+</config>

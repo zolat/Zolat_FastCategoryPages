@@ -45,7 +45,7 @@ class MultiLoadRedisCache extends \Cm_Cache_Backend_Redis implements \Zolat\Fast
     /**
      * @param $keys
      *
-     * @return mixed
+     * @return void
      */
     private function applyCachePrefix(&$keys)
     {
@@ -54,6 +54,5 @@ class MultiLoadRedisCache extends \Cm_Cache_Backend_Redis implements \Zolat\Fast
                 $key = $this->prefix.$key;
             }
         }
-        return $keys;
     }
 }
